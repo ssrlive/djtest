@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # url(r'^$', views.hello),
     path('hello/', views.hello),
+    path('runoob/', views.runoob),
 ]
 
