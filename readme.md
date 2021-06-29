@@ -24,4 +24,8 @@ python3 manage.py migrate   # 创建表结构
 python3 manage.py makemigrations test_model  # 让 Django 知道我们在我们的模型有一些变更
 python3 manage.py migrate test_model   # 创建表结构
 ```
+# create admin account
+```
+python manage.py createsuperuser
+```
 

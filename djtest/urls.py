@@ -20,7 +20,7 @@ from . import views, testdb, search, search2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # url(r'^$', views.hello),
+    url(r'^$', views.hello),
     path('hello/', views.hello),
     path('runoob/', views.runoob),
     path('testdb/', testdb.testdb),
