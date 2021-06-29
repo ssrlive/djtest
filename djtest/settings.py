@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os, sys
 sys.path.append(os.path.abspath('..'))
-import settings
+import settings as global_settings
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-$i%$*eq*kd3!=y3=os%b=^gtd90)t5u0#4$r72oy2i%u&l&2^v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ settings.site_name, 'localhost', '127.0.0.1' ]
+ALLOWED_HOSTS = [ global_settings.site_name, 'localhost', '127.0.0.1' ]
 
 
 # Application definition
@@ -86,8 +86,8 @@ DATABASES = {
         'NAME': 'runoob', # 数据库名称
         'HOST': '127.0.0.1', # 数据库地址，本机 ip 地址 127.0.0.1
         'PORT': 3306, # 端口
-        'USER': settings.db_user_name,  # 数据库用户名
-        'PASSWORD': settings.db_password, # 数据库密码
+        'USER': global_settings.db_user_name,  # 数据库用户名
+        'PASSWORD': global_settings.db_password, # 数据库密码
     }
 }
 
