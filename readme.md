@@ -12,6 +12,8 @@ python3 manage.py runserver 0.0.0.0:8002
 # mysql
 create mysql database
 ```
+pip3 install pymysql
+
 mysql -u root -p
 
 create database runoob default charset=utf8;
