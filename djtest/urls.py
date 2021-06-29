@@ -16,12 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from . import views
+from . import views, testdb
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url(r'^$', views.hello),
     path('hello/', views.hello),
     path('runoob/', views.runoob),
+    path('testdb/', testdb.testdb),
 ]
 
