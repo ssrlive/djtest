@@ -1,4 +1,5 @@
 __pycache__/
 uwsgi.log
 *.sqlite3
+*.pyc
 
